@@ -1,0 +1,263 @@
+.header{
+    position: relative;
+    height: 100px;
+    opacity: 1;
+    background-color: rgba(85,85,85,0.4)
+}
+
+.header::after{
+    width: 100%;
+    content: "";
+    
+}
+
+
+.header-warp{
+    width: 100%;
+    
+}
+
+.header-logo{
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.header-logo-img{
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.header-wrap__img{
+    height: 880px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+.header-warp__list{
+    
+}
+
+.header-list{
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-item{
+    display: inline-block;
+    text-align: center;
+    margin: auto 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.header-item__link{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    padding: 0 8px;
+
+}
+
+.header-item__link-special {
+    background-color: #BA71DA;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+.header-menu{
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    text-decoration: none;
+    font-size: 2.6rem;
+    right: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 0 12px;
+}
+
+.header-menu__logo{
+    color: var(--white-color);
+}
+
+.header__item-recommend{
+    background-color: #F76570;
+    position: absolute;
+    right: 27px;    
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    padding: 1px 8px;
+    border-radius: 4px;
+
+}
+
+
+.header__item-new{
+    background-color: #1bbc9b;
+    position: absolute;
+    right: 27px;    
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    padding: 1px 8px;
+    border-radius: 4px;
+
+}
+
+/* header nav  */
+.header__nav{
+    height: max-content;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    overflow-y: scroll;
+    display: none;
+    animation: slide linear 0.4s;
+}
+
+.header-menu:active .header__nav{
+    display: block;
+}
+
+.header__nav-quality{
+    margin-top: 28px;
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.header__nav-name{
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 2.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__nav-list{
+    margin: 68px 0;
+    list-style: none;
+}
+
+.header__nav-item{
+    display: flex;
+    margin-top: 28px;
+}
+
+.header__nav-item-warp{
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__nav-item-img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+
+.header__nav-item-place{
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #555;
+    
+}
+
+.header__nav-icon-close{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 10px;
+    right: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.header__nav-item-continent{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.header__nav-item-icon{
+
+}
+
+.header__nav-item-price-berlin{
+}
+
+.header__nav-item-price-berlin{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    padding: 22px;
+    width: auto;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+
+.header__nav-item-price-hk{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    padding: 22px;
+    width: auto;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+
+.header__nav-item-price-us{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    padding: 22px;
+    width: auto;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+.header__nav-name p::after{
+    background-color: #FFD105;
+}
+
+.header__mid{
+    position: relative;
+    width: 264px;
+    height: 264px;
+    margin: 32px auto;
+}
+
+.header__nav-name-last p::after{
+    background-color: #F3A46B;
+}
+
+.content{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
