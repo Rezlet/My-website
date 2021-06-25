@@ -49,6 +49,11 @@ html{
     
 }
 
+.grid__column-4{
+    padding: 0 15px;
+    width: 33.33334%;
+}
+
 .grid__column-8{
     padding-left: 5px;
     padding-right: 5px;
@@ -68,8 +73,6 @@ html{
     padding-bottom: 10px !important;
     border-radius: 30px !important;
     font-size: 1.4rem !important;
-    width: 100%;
-
 }
 
 .item--special:hover{
@@ -84,7 +87,6 @@ html{
     font-weight: bold;
     font-size: 2.5rem;
     justify-content: center;
-    width: 100%;
     text-decoration: none;
 }
 
@@ -95,7 +97,6 @@ html{
     height: 5px;
     left: 0;
     bottom: 4px;
-    z-index: -9;
 }
 
 .special--text u{
@@ -134,7 +135,6 @@ html{
     color: var(--white-color);   
     bottom: 54px;
     left: 32px; 
-    text-transform: uppercase;
 }
 
 .img--special-number{
@@ -152,8 +152,6 @@ html{
 
 
 .img--special-content{
-    flex-direction: column;
-    justify-content: space-around;
     position: absolute;
     background-color: #14b9d5;
     list-style: none;
@@ -161,17 +159,23 @@ html{
     height: 100%;
     top: 0;
     right: 0;
-    padding: 50px 30px;
     animation: fadeIn linear .5s;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+
     display: none;
 }
 
-.header__mid:hover .img--special-content{
+.img--special-content-warp{
+    margin: auto;
+}
+.img--special:hover .img--special-content{
     opacity: 1;
-    display: block;
+    display: flex;
 }
 
-.header__mid:hover .img--special-item{
+.img--special:hover .img--special-item{
     display: none;
 }
 
@@ -184,7 +188,6 @@ html{
 
 
 .img--special-content-mid{
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,7 +197,11 @@ html{
     color: var(--white-color);
     margin: 20px;
     padding: 8px;
+    cursor: pointer;
+}
 
+.img--special-content-mid span{
+    margin-bottom: 8px;
 }
 
 .img--special-content-tail{
