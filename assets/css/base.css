@@ -19,7 +19,7 @@ html{
 
 /*Responsive*/
 .grid{
-    width: 1350px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -53,6 +53,12 @@ html{
     padding: 0 15px;
     width: 33.33334%;
 }
+
+.grid__column-6{
+    padding: 0 15px;
+    width: 50%;
+}
+
 
 .grid__column-8{
     padding-left: 5px;
@@ -219,6 +225,22 @@ html{
     padding: 0 38px;
     text-align: center;
 }
+
+
+.head--content{
+    text-align: center;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding-bottom: 16px;
+}
+
+.head--content-main{
+    color: #555;
+    font-size: 3.5rem;
+}
+
 /* Animation */
 @keyframes fadeIn{
     from{
