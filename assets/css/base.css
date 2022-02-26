@@ -165,11 +165,10 @@ html{
     height: 100%;
     top: 0;
     right: 0;
-    animation: fadeIn linear .5s;
+    animation: fadeIn linear 1s alternate;
     flex-direction: column;
     display: flex;
     padding: 0;
-
     display: none;
 }
 
